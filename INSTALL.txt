@@ -1,0 +1,18 @@
+TitanPanel Gold Tracker - Both Factions (WoW WotLK 3.3.5)
+
+INSTALL
+1. Exit WoW completely.
+2. Back up Interface\AddOns\TitanGoldTracker and, if desired, WTF\Account\<account>\SavedVariables\TitanGoldTracker.lua.
+3. Extract the included TitanGoldTracker folder into Interface\AddOns, replacing the existing folder's files.
+4. Start WoW. Log into each character at least once with Gold Tracker enabled to record its latest balance.
+5. Right-click Gold Tracker and choose Display server gold if the bar currently shows only your character's balance.
+
+The tooltip and server total now include Alliance and Horde characters on the current realm. Existing saved balances and hide-character settings are preserved. No database reset is needed. Balances of offline characters reflect the last time you logged into them. Characters on separate WoW accounts are not shared.
+
+Based on the supplied Titan Panel 4.3.8.30300 archive. Only TitanGoldTracker.lua and TitanGoldTracker.toc were changed. Other TitanPanel modules do not need replacing.
+
+VALIDATION
+Passed Lua 5.1 checks with simulated WoW APIs: combined tooltip/totals, realm isolation, hidden characters, name/gold sorting, player-only toggle, money updates, and persistence across Alliance/Horde logins. Not tested inside the WoW client.
+
+ROLLBACK
+Exit WoW and restore the original TitanGoldTracker addon folder. The saved-variable format was kept compatible.
